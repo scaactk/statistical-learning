@@ -34,9 +34,4 @@ x_points = np.linspace(0, 1, 1000)
 # add normal distribution noisy
 y_ = real_func(x)
 y = [np.random.normal(0, 0.1) + y1 for y1 in y_]
-print(y)
-
-for i in range(10):
-    y_ += np.random.normal(0, 0.1)
-print(y_)
 
